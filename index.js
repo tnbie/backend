@@ -23,6 +23,17 @@ app.get("/products", (req, res) =>{
     ])
 })
 
+app.get("/catalog", (req, res) =>{
+    res.json([
+        {nome: 'cat 1'},
+        {nome: 'cat 2'},
+        {nome: 'cat 3'},
+        {nome: 'cat 4'},
+        {nome: 'cat 5'},
+        {nome: 'cat 6'}
+    ])
+})
+
 const PORT = 3000
 
 app.listen(process.env.PORT || PORT,() =>{
