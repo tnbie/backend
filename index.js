@@ -1,7 +1,9 @@
 const express = require('express');
+const cors = require('cors');
 const { json } = require('express/lib/response');
-
 const app = express();
+
+app.use(cors());
 
 // rota home
 app.get("/", (req, res) =>{
