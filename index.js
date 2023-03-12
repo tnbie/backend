@@ -16,7 +16,10 @@ app.get("/products", (req, res) =>{
     res.json([
         {nome: 'celular'},
         {nome: 'tv'},
-        {nome: 'sofá'}
+        {nome: 'sofá'},
+        {nome: 'cama'},
+        {nome: 'pc'},
+        {nome: 'gps'}
     ])
 })
 
